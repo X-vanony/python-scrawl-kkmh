@@ -21,7 +21,6 @@ def get_img_list(id):
     global headers
     headers["Path"] = img_path
     headers["Referer"] = cartoon
-    headers["Cookie"] = "Hm_lvt_c826b0776d05b85d834c5936296dc1d5=1582204895,1582371365,1582419209,1582419688; passToken=v1-GAgAAAAAAAAE0hggactSp-kLeLBXkme_pmXxCbtD6ujjIWI4ZYrURyXhG5kA; nickname=%255C%25CA%25D7%25BE%25A3%25BA%25C2%2594%258B%2588; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22131023000%22%2C%22first_id%22%3A%221701e6a6da7165-0314e8ab0e17e7-c383f64-2073600-1701e6a6da843d%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%221701e6a6da7165-0314e8ab0e17e7-c383f64-2073600-1701e6a6da843d%22%7D; kk_s_t=1582419723533; Hm_lpvt_c826b0776d05b85d834c5936296dc1d5=1582420216"
     req = requests.get(img_url, headers=headers)
     if req.status_code == 200:
         content = req.text
